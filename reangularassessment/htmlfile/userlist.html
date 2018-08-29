@@ -1,0 +1,24 @@
+
+<table border='4' cellspacing='3' cellpadding='2'>
+    <tr>
+            <td>Username</td>
+            <td>Password</td>
+            <td>E-mail</td>
+            <td>Type</td>
+            <td>Gender</td>
+            <td>Location</td>
+    </tr>
+
+    <tr ng-repeat="user in userlist | filter:x">
+        <td>{{user.username}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.type}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.location}}</td>
+        
+        <td><input type="button" value="delete" ng-click="deleteFn($index)"/></td>
+    </tr>
+    <br><br>
+   Filter user >>>  <input type="text" ng-model="x"/>
+</table>

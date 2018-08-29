@@ -1,0 +1,29 @@
+<h1>Messages</h1>
+<a href="#/message">b\Back to message page</a>
+<div style="border-style: solid; padding: 10px;margin: 10px;background-color: lightblue">
+    From:{{from}}<br>
+    To:{{to}}<br>
+    Title:{{title}}<br>
+    Created_at:{{created_at}}<br>
+    Description:{{description}}<br>
+    <input type="button" ng-click="delete()" value="delete"/>
+    <input type="button" ng-click="reply()" value="{{value}}"/>
+    <input type="button" ng-click="imFn()" value="{{imval}}"/><br>
+    <div ng-if="show">
+        Title
+        <input type="text" ng-model="title1"/><br>
+        Description
+        <input type="text" ng-model="description1"/><br>
+        <input type="button" value="submit" ng-click="rsubmit()"/><br>
+    </div>
+
+    <div ng-if="replyMsg"style="border-style: solid; padding: 10px;margin: 10px;background-color: lightblue">
+        From:{{from1}}<br>
+        To:{{to1}}<br>
+        Title:{{title1}}<br>
+        Created_at:{{created_at1}}<br>
+        Description:{{description1}}<br>
+        
+    </div>
+</div>
+

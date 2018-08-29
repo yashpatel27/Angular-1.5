@@ -1,0 +1,38 @@
+<a href="#/profile">Profile</a>
+<a href="#/message">Message</a>
+<a href="#/" ng-click="clearFcCur()">logout</a>
+<div>
+    <div>
+        <h1>profile</h1>
+        username: {{username}}<br>
+        password: {{password}}<br>
+        firstname: {{firstname}}<br>
+        lastname: {{lastname}}<br>
+        email: {{email}}<br>
+        phone: {{phone}}<br>
+        location: {{location}}<br>
+    </div>
+    
+    <input type="button" ng-click="editfn()" value="{{value}}"/><br>
+    <!-- //<cur-Directive></cur-Directive> -->
+    <div ng-if="show">
+        username
+        
+        <input type="text" ng-model="username"/><br>
+        
+        password
+        <input type="password" ng-model="password"/><br>
+        firstname
+        <input type="text" ng-model="firstname"/><br>
+        lastname
+        <input type="text" ng-model="lastname"/><br>
+        email
+        <input type="email" ng-model="email"/><br>
+        phone
+        <input type="text" ng-model="phone"/><br>
+        location
+        <input type="text" ng-model="location"/><br>
+        <div ng-bind="errArea"></div>
+        <input type="button" value="submit" ng-click="subedit()"/><br>
+    </div>
+</div>

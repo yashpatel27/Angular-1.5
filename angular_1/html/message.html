@@ -1,0 +1,11 @@
+<a href="#/profile">profile</a>
+<a href="#/message">message</a>
+<a href="#/" ng-click="clearFcCur()">logout</a>
+<h3>click to see more detial</h3>
+<div ng-repeat="m in messages" style="border-style: solid; padding: 10px;margin: 10px;background-color: lightblue">
+    <!-- //{{tmp=m.recipient}} -->
+    <div ng-click="jumpFn(m.created_at)" >
+        To:{{m.recipient}}          From:{{m.sender}}<br>
+        Title:{{m.title}}           Time:{{m.created_at}}
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<br>
+<br>
+<input type="text" placeholder="Username" ng-model="username"><br><br>
+<input type="password" placeholder="Password" ng-model="password"><br><br>
+<input type="email" placeholder="E-mail" ng-model="email"><br><br>
+
+<select name="singleSelect" ng-model="type">
+    <option value="admin">Admin</option>
+    <option value="manager">Manager</option>
+    <option value="consultant">Consultant</option>
+</select>
+<br><br>
+<input type="radio" ng-model="gender" value="Male">Male
+<input type="radio" ng-model="gender" value="Female">Female
+<br><br>
+<input type="text" placeholder="location" ng-model="location">
+<br><br>
+<input type="button" value="Submit" ng-click="submitFn()">
